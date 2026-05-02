@@ -41,7 +41,7 @@ def update_student(student_id,name,s_class):
     conn.commit()
     conn.close()
     return row_count
-
+    
 def delete_student(student_id):
     conn=get_conn()
     cur=conn.cursor()

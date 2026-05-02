@@ -17,6 +17,6 @@ def db_init():
             s_class TEXT
         )
     ''')
-
+    
     conn.commit()
     conn.close()

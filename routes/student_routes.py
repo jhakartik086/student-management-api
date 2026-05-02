@@ -18,7 +18,7 @@ def add():
 def display_all():
     students=get_all_student()
     return jsonify(students), 200
-
+    
 @student_bp.route('/<int:id>',methods=['GET'])
 def display_by_id(id):
     student = get_student_by_id(id)
